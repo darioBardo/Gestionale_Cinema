@@ -1,0 +1,26 @@
+<script src="./script/sala.js"> </script>
+
+	<button type="button" id="table-toggler" name="button"
+		onclick="hideTable()">Show Me!</button>
+	<table class="rooms-table" id="rooms-table">
+		<thead>
+			<th>ID</th>
+			<th>Nome Sala</th>
+			<th>Numero Posti</th>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+	<div class="">
+		<form class="leggiSale" action="http://localhost:8080/listaPosti" method="GET">
+			<select id="lista-sale" name="id">
+			</select>
+			<button type="submit" name="button" class="form-button" formtarget="_blank">Mostra Posti</button>
+		</form>
+	</div>
+	
+	
+	<script type="text/javascript">
+	$(document).ready(createRoomsTable());
+	$(document).ready(createDropDown());
+	</script>

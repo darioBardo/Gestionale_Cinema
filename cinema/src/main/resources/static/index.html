@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/dropdownmenu.css">
+
+    <title>Cinema</title>
+
+  </head>
+
+
+  <body>
+    <header class="header">
+     <nav class="navbar navbar-dark bg-primary">
+          <a href="./index.html" ><img id="home-logo" src="./img/home.png" alt="home"></a>
+          <div class="menu">
+
+            <div class="dropdown">
+                <button class="dropbtn" onclick="$('#main').load('sale.html');">Sala</button>
+                <div class="dropdown-content">
+                  <a href="#sale" onclick="$('#main').load('sale.html');">Mostra</a>
+                    <a href="#nuovaSala" onclick="$('#main').load('newSala.html');">Inserisci</a>
+                    <a href="#cancellaSala" onclick="$('#main').load('deleteSala.html');">Elimina</a>
+                </div>
+            </div>
+            <div class="dropdown">
+               <button class="dropbtn" onclick="$('#main').load('film.html');">Film</button>
+               <div class="dropdown-content">
+                   <a href="#film" onclick="$('#main').load('film.html');">Mostra</a>
+                   <a href="#nuovoFilm" onclick="$('#main').load('newFilm.html');">Inserisci</a>
+                   <a href="#cancellaFilm" onclick="$('#main').load('deleteFilm.html');">Elimina</a>
+               </div>
+            </div>
+            <div class="dropdown">
+               <button class="dropbtn">Proiezione</button>
+               <div class="dropdown-content">
+                   <a href="#proiezioni" onclick="$('#main').load('proiezioni.html');">Mostra</a>
+                   <a href="#nuovaProiezione" onclick="$('#main').load('newProiezione.html');">Inserisci</a>
+                   <a href="#cancellaProiezione" onclick="$('#main').load('deleteProiezione.html');">Elimina</a>
+               </div>
+            </div>
+
+        </div><!-- Fine Menu -->
+        <div class="user-action">
+          <a href="#login" onclick="$('#main').load('login.html');">Login</a>
+          <a href="#new-user" onclick="$('#main').load('login.html');">Sign Up</a>
+        </div>
+      </nav><!-- Fine NavBar -->
+    </header><!-- Fine Header -->
+
+    <div class="main" id="main">
+
+    </div>
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+        <!--<script type="text/javascript" src="webjars/jquery/2.2.4/jquery.min.js"></script>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="./script/scriptjs.js"></script>
+        <script src="./script/sala.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      </body>
+    </html>

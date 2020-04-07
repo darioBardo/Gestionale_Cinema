@@ -1,0 +1,17 @@
+    <form class="inserimento-film" action="http://localhost:8080/insertFilm" method="POST">
+      <input type="text" name="titolo" value="" placeholder="Titolo del Film"><br>
+      <select class="film-genere" name="genere">
+        <option selected="true" disabled>Genere</option>
+        <option value="commedia">Commedia</option>
+        <option value="thriller">Thriller</option>
+        <option value="horror">Horror</option>
+        <option value="romantico">Romantico</option>
+        <option value="drammatico">Drammatico</option>
+        <option value="azione">Azione</option>
+      </select><br>
+      <input type="text" name="trama" value="" placeholder="Trama"><br>
+      <input type="text" name="durata" value="" placeholder="Durata"><br>
+      <input type="text" name="regista" value="" placeholder="Regista"><br>
+
+      <button type="submit" name="button" formtarget="_self">Inserisci il Film</button>
+    </form>
